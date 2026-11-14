@@ -2,6 +2,8 @@
 
 把一个 CLI agent（默认 `opencode acp`）变成 DSH 里的**可分发任务**，并提供**对话式**的查看与追问界面。
 
+> 仓库：[MindCastlePlayground/dsh-cli-dispatch](https://github.com/MindCastlePlayground/dsh-cli-dispatch)
+
 DSH 自带的 subagent 只能跑 DSH 自己的模型。真实开发中经常需要把活儿交给外部 CLI agent：它有自己的工具链、自己的 provider 额度、自己的登录态、自己的沙箱。这个插件把这类 CLI 收进 DSH：
 
 - **任务分发**：模型调用 `cli_dispatch` 起一个任务，插件拉起 CLI 子进程、建一个会话，把 prompt 发过去；
