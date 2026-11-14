@@ -1,0 +1,39 @@
+{
+  "name": "@local/dsh-cli-dispatch",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Dispatch tasks to an external agent CLI (opencode by default) over ACP and hold a real multi-turn conversation with it, with a streamed Web panel.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client/index.js",
+    "./lib/*.js": "./lib/*.js"
+  },
+  "files": [
+    "index.js",
+    "client/index.js",
+    "lib/*.js",
+    "scripts/*.mjs",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test \"test/*.test.mjs\"",
+    "verify": "node scripts/verify.mjs",
+    "verify:plugin": "node scripts/verify-plugin.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ],
+      "platform": "web"
+    }
+  }
+}

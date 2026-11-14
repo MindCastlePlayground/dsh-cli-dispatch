@@ -1,0 +1,3 @@
+# Verification scratch output (the reports themselves are committed as evidence)
+tmp/
+tmp-*.log

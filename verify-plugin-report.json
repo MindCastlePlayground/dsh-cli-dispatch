@@ -1,0 +1,113 @@
+{
+  "ok": true,
+  "checks": [
+    {
+      "name": "the plugin declares its host name",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "the plugin declares its service dependency",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "apply() registered the three tools",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "apply() registered the /dispatch command",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "cli_dispatch returned a task id",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "cli_dispatch returned the agent reply",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "the reply carries the requested token",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "the tool result carries a conversation transcript",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "the renderer emits text rows",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "cli_message stayed on the same task",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "cli_message reused the same agent session",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "the agent answered from session memory",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "cli_tasks lists the task",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "cli_tasks read returns the conversation",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "cli_tasks stop reports the stopped task id",
+      "ok": true,
+      "detail": true
+    },
+    {
+      "name": "the stopped task is cancelled",
+      "ok": true,
+      "detail": true
+    }
+  ],
+  "tool": {
+    "id": "dispatch-9ad5185f95b74afa",
+    "target": "opencode",
+    "label": "opencode (ACP)",
+    "title": "Reply with exactly this token and nothing else: PLUGIN-PATH-",
+    "status": "idle",
+    "cwd": "H:\\Documents\\Abyss\\DSHAbility\\packages\\dsh-cli-dispatch\\tmp\\verify-plugin",
+    "turns": 1,
+    "entries": 2,
+    "sessionId": "ses_e2eb208cfffeoFXcHJvao0nHsH",
+    "stopReason": "end_turn",
+    "createdAt": "2026-11-12T19:48:26.276Z",
+    "updatedAt": "2026-11-12T19:48:34.035Z"
+  },
+  "steps": [
+    {
+      "step": "cli_dispatch",
+      "reply": "PLUGIN-PATH-OK"
+    },
+    {
+      "step": "cli_message",
+      "reply": "PLUGIN-PATH-OK"
+    },
+    {
+      "step": "cli_tasks",
+      "status": "cancelled"
+    }
+  ]
+}

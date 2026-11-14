@@ -1,0 +1,8 @@
+# One framework row. Deployments usually override `config.targets` from their
+# own patch layer to point at a specific CLI binary, or leave the default
+# `opencode` target that resolves the binary from PATH.
+- insert:
+    - id: cli-dispatch
+      name: '@local/dsh-cli-dispatch'
+      config:
+        targets: []

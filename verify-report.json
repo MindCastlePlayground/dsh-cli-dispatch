@@ -1,0 +1,171 @@
+{
+  "startedAt": "2026-11-12T19:45:39.779Z",
+  "command": "D:\\Code\\soft\\OpenCode\\npm\\node_modules\\@opencode\\cli\\bin\\opencode.exe",
+  "checks": [
+    {
+      "name": "handshake completed",
+      "ok": true,
+      "detail": "status=running"
+    },
+    {
+      "name": "agent reported its identity",
+      "ok": true,
+      "detail": "OpenCode 2.2.7"
+    },
+    {
+      "name": "a real ACP session id was minted",
+      "ok": true,
+      "detail": "ses_e2eb493a1ffengk3KqQMpEVHcq"
+    },
+    {
+      "name": "turn one settled",
+      "ok": true,
+      "detail": "stopReason=end_turn"
+    },
+    {
+      "name": "turn one returned text",
+      "ok": true,
+      "detail": "3059ms"
+    },
+    {
+      "name": "turn one contains the requested token",
+      "ok": true,
+      "detail": "DISPATCH-TURN-ONE"
+    },
+    {
+      "name": "turn two settled",
+      "ok": true,
+      "detail": "stopReason=end_turn"
+    },
+    {
+      "name": "the agent remembered the earlier turn without being told again",
+      "ok": true,
+      "detail": "DISPATCH-TURN-ONE"
+    },
+    {
+      "name": "both turns share one agent session",
+      "ok": true,
+      "detail": "turns=2 session=ses_e2eb493a1ffengk3KqQMpEVHcq"
+    },
+    {
+      "name": "the transcript has both user turns",
+      "ok": true
+    },
+    {
+      "name": "the transcript has both agent replies",
+      "ok": true
+    },
+    {
+      "name": "settled replies are no longer marked as streaming",
+      "ok": true
+    },
+    {
+      "name": "usage was reported by the agent",
+      "ok": true,
+      "detail": "{\"inputTokens\":31,\"outputTokens\":9,\"totalTokens\":14120,\"cachedReadTokens\":14080}"
+    },
+    {
+      "name": "the agent process was closed cleanly",
+      "ok": true
+    }
+  ],
+  "turns": [
+    {
+      "turn": 1,
+      "prompt": "Reply with exactly this token and nothing else: DISPATCH-TURN-ONE",
+      "reply": "DISPATCH-TURN-ONE",
+      "elapsedMs": 3059,
+      "stopReason": "end_turn",
+      "usage": {
+        "inputTokens": 31,
+        "outputTokens": 9,
+        "totalTokens": 14120,
+        "cachedReadTokens": 14080
+      }
+    },
+    {
+      "turn": 2,
+      "prompt": "Which token did I ask you to reply with one message ago? Quote it exactly.",
+      "reply": "DISPATCH-TURN-ONE",
+      "stopReason": "end_turn"
+    }
+  ],
+  "ok": true,
+  "transcript": "User: Reply with exactly this token and nothing else: DISPATCH-TURN-ONE\nAgent: DISPATCH-TURN-ONE\nUser: Which token did I ask you to reply with one message ago? Quote it exactly.\nAgent: DISPATCH-TURN-ONE",
+  "task": {
+    "id": "dispatch-f208cf40479b4650",
+    "target": "opencode",
+    "label": "opencode (ACP)",
+    "title": "verification run",
+    "status": "idle",
+    "cwd": "H:\\Documents\\Abyss\\DSHAbility\\packages\\dsh-cli-dispatch\\tmp\\verify",
+    "turns": 2,
+    "entries": 4,
+    "counts": {
+      "assistant": 2,
+      "reasoning": 0,
+      "tool": 0,
+      "system": 0,
+      "error": 0,
+      "user": 2
+    },
+    "availableCommands": [
+      {
+        "name": "init",
+        "description": "guided AGENTS.md setup"
+      },
+      {
+        "name": "review",
+        "description": "review changes [commit|branch|pr], defaults to uncommitted"
+      },
+      {
+        "name": "dooc:analyze-code-to-docs",
+        "description": "You are an external agent CLI. This documentation system is not your runtime. Search before writing. Anchor comments with heading, quote, and occurrence, never a line number alone."
+      },
+      {
+        "name": "dooc:generate-design-document",
+        "description": "You are an external agent CLI. This documentation system is not your runtime. Search before writing. Anchor comments with heading, quote, and occurrence, never a line number alone."
+      },
+      {
+        "name": "dooc:implement-document-plan",
+        "description": "You are an external agent CLI. This documentation system is not your runtime. Search before writing. Anchor comments with heading, quote, and occurrence, never a line number alone."
+      },
+      {
+        "name": "dooc:process-comment",
+        "description": "You are an external agent CLI. This documentation system is not your runtime. Search before writing. Anchor comments with heading, quote, and occurrence, never a line number alone."
+      },
+      {
+        "name": "dooc:review-document",
+        "description": "You are an external agent CLI. This documentation system is not your runtime. Search before writing. Anchor comments with heading, quote, and occurrence, never a line number alone."
+      },
+      {
+        "name": "dooc:update-document",
+        "description": "You are an external agent CLI. This documentation system is not your runtime. Search before writing. Anchor comments with heading, quote, and occurrence, never a line number alone."
+      },
+      {
+        "name": "goal",
+        "description": "keep working until an objective is met [pause|resume|clear]"
+      },
+      {
+        "name": "compact",
+        "description": "Compact the session"
+      }
+    ],
+    "sessionId": "ses_e2eb493a1ffengk3KqQMpEVHcq",
+    "usage": {
+      "inputTokens": 31,
+      "outputTokens": 9,
+      "totalTokens": 14120,
+      "cachedReadTokens": 14080
+    },
+    "stopReason": "end_turn",
+    "createdAt": "2026-11-12T19:45:39.783Z",
+    "updatedAt": "2026-11-12T19:45:48.004Z"
+  },
+  "sessionId": "ses_e2eb493a1ffengk3KqQMpEVHcq",
+  "agent": {
+    "name": "OpenCode",
+    "version": "2.2.7"
+  },
+  "finishedAt": "2026-11-12T19:45:48.028Z"
+}
